@@ -1,0 +1,8 @@
+# Emacs-related:
+*~
+\#*\#
+.\#*
+
+# Nix related:
+result
+*.qcow2
