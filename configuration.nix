@@ -32,6 +32,12 @@
       initialPassword = "test";
     };
 
+    environment.systemPackages = with pkgs; [
+      emacs
+      tmux
+      wget
+      lynx
+    ];
     system.stateVersion = "26.05";
   };
 }
