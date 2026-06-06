@@ -2,6 +2,7 @@
 
   imports = [
     ./terminator.nix
+    ./zsh.nix
   ];
   
   config = {
