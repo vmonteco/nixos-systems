@@ -2,6 +2,7 @@
 
   imports = [
     ./terminator.nix
+    ./tmux.nix
     ./zsh.nix
   ];
   
