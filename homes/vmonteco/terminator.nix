@@ -1,16 +1,15 @@
 { config, pkgs, ... }: {
   config = {
-    home-manager.users.vmonteco = { pkgs, ... }: {
-      home.packages = with pkgs; [
-        terminator
-      ];
-
-      programs = {
-        terminator = {
-          enable = true;
-          config = {
-            borderless = true;
-            split_horiz = "<Alt><Shift>D";
+    home.packages = with pkgs; [
+      terminator
+    ];
+    
+    programs = {
+      terminator = {
+        enable = true;
+        config = {
+          borderless = true;
+          split_horiz = "<Alt><Shift>D";
             split_vert = "<Alt>D";
             profiles = {
               default = {
@@ -20,7 +19,6 @@
                 scrollbar_position = "hidden";
               };
             };
-          };
         };
       };
     };
