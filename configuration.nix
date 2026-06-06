@@ -1,5 +1,7 @@
 { config, lib, pkgs, ... }: {
   imports = [
+    ./programs
+    ./services
   ];
 
   config = {
@@ -14,21 +16,6 @@
     };
 
     time.timeZone = "Europe/Paris";
-
-    services = {
-      xserver = {
-        enable = true;
-        displayManager.lightdm.enable = true;
-        windowManager.i3.enable = true;
-      };
-      libinput.enable = true;
-      openssh.enable = true;
-    };
-
-    programs = {
-      firefox.enable = true;
-      zsh.enable = true;
-    };
 
     users.users.vmonteco = {
       isNormalUser = true;
