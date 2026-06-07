@@ -1,5 +1,6 @@
 { config, lib, pkgs, ... }: {
   imports = [
+    ./hardware-configuration.nix
     ./programs
     ./services
     ./homes
@@ -17,6 +18,27 @@
     };
 
     time.timeZone = "Europe/Paris";
+
+    fonts = {
+      enableDefaultPackages = true;
+      packages = with pkgs; [
+        # "JetBrains Mono"
+      ] ++ builtins.filter lib.attrsets.isDerivation (
+        builtins.attrValues pkgs.nerd-fonts
+      );
+      fontconfig = {
+        defaultFonts = {
+          monospace = [
+            "FiraCode Nerd Font Mono Ret"
+          ];
+        };
+      };
+    };
+
+    console = {
+      enable = true;
+      keyMap = "us";
+    };
 
     users.users.vmonteco = {
       isNormalUser = true;
