@@ -2,10 +2,11 @@
   config = {
     home-manager.users.vmonteco = { pkgs, lib, ... }: {
       imports = [
+        ./emacs
+        ./i3.nix
         ./terminator.nix
         ./tmux.nix
         ./zsh.nix
-        ./i3.nix
       ];
 
       programs = {
