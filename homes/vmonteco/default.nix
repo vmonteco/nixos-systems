@@ -3,6 +3,7 @@
     home-manager.users.vmonteco = { pkgs, lib, ... }: {
       imports = [
         ./emacs
+        ./firefox
         ./i3.nix
         ./terminator.nix
         ./tmux.nix

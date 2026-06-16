@@ -1,0 +1,31 @@
+{ config, pkgs, ... }: {
+  config = {
+    programs.firefox = {
+      enable = true;
+      # settings = {
+      #   # "extensions.activeThemeID" = "{6c4bc571-a5b1-4d99-9afb-a354664258d1}";
+      # };
+      languagePacks = [
+        "en-US"
+        "fr"
+      ];
+      
+      profiles = {
+        "my-default-profile" = {
+          id = 0;
+          name = "my default profile";
+          isDefault = true;
+        };
+        "dev-edition-default" = {
+          id = 1;
+          path = config.home.username;
+
+          settings = {
+            "browser.aboutConfig.showWarning" = false;
+            "extensions.activeThemeID" = "{6c4bc571-a5b1-4d99-9afb-a354664258d1}";
+          };
+        };
+      };
+    };
+  };
+}

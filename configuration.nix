@@ -19,6 +19,13 @@
 
     time.timeZone = "Europe/Paris";
 
+    i18n = {
+      defaultLocale = "en_US.UTF-8";
+      extraLocales = [
+        "fr_FR.UTF-8/UTF-8"
+      ];
+    };
+
     fonts = {
       enableDefaultPackages = true;
       packages = with pkgs; [
