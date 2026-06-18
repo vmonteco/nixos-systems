@@ -7,7 +7,10 @@
     services = {
       xserver = {
         enable = true;
-        displayManager.lightdm.enable = true;
+        displayManager.lightdm = {
+          enable = true;
+          background = "#000000";
+        };
         windowManager.i3.enable = true;
       };
       libinput.enable = true;
