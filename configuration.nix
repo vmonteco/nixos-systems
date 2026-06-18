@@ -50,9 +50,10 @@
     users.users.vmonteco = {
       isNormalUser = true;
       extraGroups = [
-        "wheel"
-        "video"
+        "docker"
         "networkmanager"
+        "video"
+        "wheel"
       ];
       shell = pkgs.zsh;
       home = "/home/vmonteco";
@@ -72,6 +73,9 @@
       wget
       lynx
     ];
+
+    virtualisation.docker.enable = true;
+    
     system.stateVersion = "26.05";
   };
 }
