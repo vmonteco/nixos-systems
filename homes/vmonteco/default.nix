@@ -4,6 +4,7 @@
       imports = [
         ./emacs
         ./firefox
+        ./git.nix
         ./i3.nix
         ./terminator.nix
         ./tmux.nix
