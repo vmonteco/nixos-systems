@@ -4,6 +4,9 @@
   ];
 
   config = {
-    home-manager.useUserPackages = true;
+    home-manager = {
+      backupFileExtension = "backup";
+      useUserPackages = true;
+    };
   };
 }
