@@ -18,7 +18,14 @@
         shellAliases = {
           emacs = "emacs -nw";
         };
-        
+        packages = with pkgs; [
+          scrot
+          xournalpp
+          gimp
+          sxiv
+          evince
+          calibre
+        ];
         stateVersion = "26.05";
       };
     };
