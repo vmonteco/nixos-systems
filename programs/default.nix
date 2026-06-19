@@ -18,5 +18,9 @@
     environment.systemPackages = with pkgs; [
       protonup-qt
     ];
+
+    users.users.vmonteco.packages = with pkgs; [
+      discord
+    ];
   };
 }

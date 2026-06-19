@@ -27,6 +27,7 @@
     };
 
     nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+      "discord"
       "steam"
       "steam-unwrapped"
     ];
@@ -62,8 +63,6 @@
       ];
       shell = pkgs.zsh;
       home = "/home/vmonteco";
-      packages = with pkgs; [
-      ];
       initialPassword = "test";
     };
 
