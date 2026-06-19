@@ -20,12 +20,15 @@
           emacs = "emacs -nw";
         };
         packages = with pkgs; [
-          scrot
-          xournalpp
-          gimp
-          sxiv
-          evince
           calibre
+          evince
+          gimp
+          lynx
+          scrot
+          sxiv
+          tree
+          wget
+          xournalpp
         ];
         stateVersion = "26.05";
       };
