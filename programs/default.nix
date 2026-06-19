@@ -7,6 +7,7 @@
       # firefox.enable = true;
       zsh.enable = true;
       git.enable = true;
+      mtr.enable = true;
       steam = {
         enable = true;
         extraCompatPackages = with pkgs; [
