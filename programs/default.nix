@@ -18,6 +18,7 @@
 
     environment.systemPackages = with pkgs; [
       protonup-qt
+      dwarf-fortress
     ];
 
     users.users.vmonteco.packages = with pkgs; [
