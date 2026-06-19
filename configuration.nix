@@ -26,6 +26,11 @@
       ];
     };
 
+    nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+      "steam"
+      "steam-unwrapped"
+    ];
+        
     fonts = {
       enableDefaultPackages = true;
       packages = with pkgs; [
