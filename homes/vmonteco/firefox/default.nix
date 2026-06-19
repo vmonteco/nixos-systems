@@ -14,7 +14,11 @@
             name = "My default profile";
             isDefault = true;
             settings = {
-              "browser.startup.homepage" = "https://nixos.org/|https://duckduckgo.com/";
+              "browser.startup.homepage" = ''https://intra.42.fr/
+              |https://stackoverflow.com/
+              |https://trello.com/
+              |https://github.com/
+              '';
             };
             search.engines = {
               google.metaData.hidden = true;
