@@ -27,6 +27,7 @@
           scrot
           sxiv
           tree
+          vlc
           wget
           xournalpp
         ];
