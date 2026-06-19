@@ -4,7 +4,7 @@
 
   config = {
     programs = {
-      # firefox.enable = true;
+      firefox.enable = true;
       zsh.enable = true;
       git.enable = true;
       mtr.enable = true;
