@@ -5,6 +5,7 @@
         enable = true;
         extraPackages = epkgs: with epkgs; [
           xclip
+          markdown-mode
         ];
       };
     };
